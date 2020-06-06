@@ -1,4 +1,4 @@
-@media (max-width:900px){ /* quando a tela for menor que 900px, segue as regras: */
+@media (max-width:900px){ /* de 0 a 900px, segue as regras: */
 
     #page-home{
         background-position: 70vw;
@@ -26,6 +26,19 @@
 
     #page-search-results .cards img{
         height: 250px;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+
+    .items-grid{
+        
+        grid-template-columns: 1fr 1fr;
     }
 
 }
