@@ -111,7 +111,12 @@
 {% block modal %}
     {% if saved %}
         {% include "partials/point-created.html" %}
+
     {% endif %}
+    {% if saved === false %}
+        {% include "partials/no-point-created.html" %}
+    {% endif %}
+
 {% endblock modal %}
 
 {% block scripts %}

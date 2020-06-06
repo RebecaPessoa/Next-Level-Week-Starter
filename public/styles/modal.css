@@ -94,3 +94,14 @@
     color:white;
     margin-top: 32px;
 }
+
+#modal.nopoint .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.nopoint h1{
+    color:white;
+    margin-top: 32px;
+}
