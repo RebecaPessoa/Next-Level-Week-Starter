@@ -57,7 +57,7 @@ document
 const itemsToCollect = document.querySelectorAll(".items-grid li")
 //usando a nodeList de items do grid:
 for (const item of itemsToCollect) {
-    item.addEventListener("click", handleSelectedItem)
+    item.addEventListener("click", handleSelectedItem) //handleSelectedItem é uma callback executada só após o click
 }
 
 const collectedItems = document.querySelector("input[name=items]")
@@ -75,6 +75,8 @@ function handleSelectedItem(event) {
 
     const itemId = itemLi.dataset.id /*busca o id dos itens clicados*/
 
+
+    //console.log('Item id; ', itemId)
 
     //verificar se há itens selecionados
     //se sim, pegar itens selecionados
@@ -97,9 +99,13 @@ function handleSelectedItem(event) {
 
         selectedItems = filteredItems
 
-    } else //se não estiver selecionado, adicionar a seleção
+    } else { //se não estiver selecionado, adicionar a seleção
 
         selectedItems.push(itemId)
+
+    }
+    //console.log('Item id; ', itemId)
+
 
     //atualizar o campo escondido (input hidden) com os dados selecionados
     collectedItems.value = selectedItems
