@@ -1,0 +1,36 @@
+@media (max-width:900px){ /* quando a tela for menor que 900px, segue as regras: */
+
+    #page-home{
+        background-position: 70vw;
+    }
+    #page-home .content{
+
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px; /* cria um espaço no fim da página de 48px e coloca o <a> dentro*/
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+
+}
+
+@media(min-width:1700px){ /*de 1700 pra cima, aplica as regras*/
+    #page-home{
+        background-position-x: 40vw;
+
+    }
+}
+
+@media(max-height:760px){
+    #page-home{
+        background-position-y:200px ;
+    }
+}
